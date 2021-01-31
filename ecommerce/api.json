@@ -1,0 +1,27 @@
+{
+    "/signin": "sign in-post",
+    "/signup": "sign up-post",
+    "/signout": "sign out-get",
+
+
+    "/category/:categoryId": "read single category-get",
+    "/category/create/:userId": "create new category, posted by userId - isAdmin",
+    "/category/:categoryId/:userId (put)": "update category by categoryId, put by userId - isAdmin",
+    "/category/:categoryId/:userId (delete)": "delete category by categoryId, deleted by userId - isAdmin",
+    "/categories": "get all categories in db",
+
+
+    "/product/:productId": "read single product-get",
+    "/product/create/:userId": "create new product, posted by userId - isAdmin",
+    "/product/:productId/:userId (delete)": "delete product by productId, deleted by userId - isAdmin",
+    "/product/:productId/:userId (put)": "update product by productId, put by userId - isAdmin",
+    "/products": "get all products in db",
+    "/products/related/:productId": "get all related products based on current product's category",
+    "/products/categories": "get all products's categories",
+    "/products/by/search": "get all products based on search condition",
+
+    
+    "/product/photo/:productId": "get product's photo",
+    "/user/:userId": "get signle user based on userId",
+    "/user/:userId (put)": "update user based on userId"
+}
